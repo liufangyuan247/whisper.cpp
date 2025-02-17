@@ -229,6 +229,7 @@ target_include_directories(ggml-base PRIVATE .)
 
 add_library(ggml
             ggml-backend-reg.cpp)
+link_libraries(stdc++fs)
 
 target_link_libraries(ggml PUBLIC ggml-base)
 
