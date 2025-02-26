@@ -1,0 +1,7 @@
+root   ::= init " " command "."
+init   ::= " A,"
+
+command ::= yarncmd | controlcmd
+yarncmd ::= yarndata (", " yarncmd)?
+yarndata ::= "上" | "下" | "经" | "纬" | "黑" | "白"
+controlcmd ::= "换行" | "删除排" | "撤销删除排" | "暂停录入" | "开始录入" | "保存" | "退出"
